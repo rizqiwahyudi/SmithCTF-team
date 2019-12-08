@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kompetisi Bidang Cyber Security">
+  	<meta name="author" content="Rizqi Wahyudi">
+
+	<title>CTF Competition</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jumbotron.css">
+	<link rel="stylesheet" type="text/css" href="css/sticky.css">
+	<link rel="stylesheet" type="text/css" href="css/chall.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">SMITH CTF</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="notif.html">Notifications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="score.html">Scoreboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="chall.html">Challenges</a>
+					</li>
+				</ul>
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					<li class="nav-item">
+						<a class="nav-link" href="team.html">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="register.html">Register</a>
+					</li>
+					<li class="nav-item">
+						<p class="lead"> | </p>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Halaman konten -->
+	<main id="roll" role="main">
+		<div class="jumbotron bg-dark text-white">
+			<div class="text-center">
+				<h1>Login</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<form action="" method="post" class="form-horizontal" accept-charset="UTF-8" autocomplete="off" role="form">
+						<div class="form-group">
+							<label for="uname">Username or Email</label>
+							<input type="text" name="name" class="form-control" id="uname" style="border-color: gray;" required="">
+						</div>
+						<div class="form-group">
+							<label for="pass">Password</label>
+							<input type="Password" name="pass" class="form-control" id="pass" style="border-color: gray;" required="">
+						</div>
+						<div class="row pt-3">
+							<div class="col-md-6">
+								<a class="float-left align-text-to-button" href="reset-password.html">Forgot Your Password?</a>
+							</div>
+							<div class="col-md-6">
+								<button class="btn btn-md btn-primary btn-outlined float-right" type="submit" tabindex="5" onclick="">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://www.instagram.com/smith_smada/">
+				<small class="text-muted"><b>Powered by SMITH</b></small>
+			</a>
+		</div>
+	</footer>
+
+	<!-- JS Script -->
+	<script type="text/javascript" src="js/function.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script>
+		new Typed('#lomba', {
+			strings : ['Web Hacking', 'Cryptography', 'Binary Exploitation', 'Digital Forensic', 'Network Analysis', 'Reverse Engineering'],
+			typeSpeed : 150,
+			delaySpeed : 200,
+			loop : true
+		});
+	</script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>
