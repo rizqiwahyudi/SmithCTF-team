@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kompetisi Bidang Cyber Security">
+  	<meta name="author" content="Rizqi Wahyudi">
+
+	<title>CTF Competition</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jumbotron.css">
+	<link rel="stylesheet" type="text/css" href="sticky.css">
+	<link rel="stylesheet" type="text/css" href="chall.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">SMITH CTF</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="notif.html">Notifications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="score.html">Scoreboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Challenges</a>
+					</li>
+				</ul>
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					<li class="nav-item">
+						<a class="nav-link" href="team.html">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Halaman konten -->
+	<main id="roll" role="main">
+		<div class="jumbotron bg-dark text-white">
+			<div class="container text-center">
+				<h1>Challenges</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="pt-5">
+				<div class="col-md-12 mb-3">
+					<h3>Web Hacking</h3>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-3 d-inline-block">
+						<button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-dark w-100 text-truncate pt-3 pb-3 mb-2">
+							<p>KUE bolu !</p>
+							<span>100</span>
+						</button>
+					</div>
+					<div class="col-md-3 d-inline-block">
+						<button class="btn btn-dark w-100 text-truncate pt-3 pb-3 mb-2" type="button" data-toggle="modal" data-target="#modal2">
+							<p>URL n CODE</p>
+							<span>100</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="close">
+							<span aria-hidden="true">X</span>
+						</button>
+						<!-- Nav Tabs -->
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#challenge">Challenge</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#solves">Solves</a>
+							</li>
+						</ul>
+						<!-- Tabe Panes -->
+						<div role="tabpanel" class="container">
+							<div class="tab-content">
+								<div id="challenge" class="tab-pane fade show active" role="tabpanel">
+									<h2 class="text-center pt-3">KUE bolu !</h2>
+									<h3 class="text-center">100</h3>
+									<span class="challenge-desc">
+										<div class="text-center">
+											<p>Bambang adalah seorang developer baru dan ia juga baru pertama kali menjadi Administrator Website sebuah Instansi, Sebagai Administrator seharusnya ia bisa masuk sebagai Admin, akan tetapi ia tidak bisa masuk sebagai admin. pada kasus kali ini kamu sebagai Bug Hunter dan Pentester diminta menganalisa apa yang terjadi pada website bambang tersebut</p><br>
+											<p class="alert alert-info">Waktu login dibatasi, so you must be fast get the flag !. dan jangan mencoba-coba memasukkan username dan password asal-asalan, karena IP kamu akan di BLOKIR!</p>
+										</div>
+										<p>Website-nya : <a href="http://rizqiwahyudi.it.student.pens.ac.id/ctf1/" target="_blank">Login</a></p>
+									</span>
+									<div class="row submit-row">
+										<div class="col-md-9 form-group">
+											<input type="text" name="answer" id="flagOne" class="form-control" placeholder="Flag" style="height: 50px;" onkeypress="valid(event)"><br>
+											<p class="col-md-12" id="result1">
+												
+											</p>
+										</div>
+										<div class="col-md-3 form-group key-submit">
+											<button id="proses" class="btn btn-sm btn-outline-secondary float-right" type="submit" tabindex="5">Submit</button>
+										</div>
+									</div>
+								</div>
+								<div id="solves" class="tab-pane fade" role="tabpanel">
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table table-striped text-center table-hover">
+												<thead>
+													<tr>
+														<td>
+															<b>Name</b>
+														</td>
+														<td>
+															<b>Date</b>
+														</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Cyber Security Sumenep</td>
+														<td>5 Hours ago</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="close">
+							<span aria-hidden="true">X</span>
+						</button>
+						<!-- Nav Tabs -->
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#challenge2">Challenge</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#solves2">Solves</a>
+							</li>
+						</ul>
+						<!-- Tab Panes -->
+						<div class="container" role="tabpanel">
+							<div class="tab-content">
+								<div id="challenge2" class="tab-pane fade show active" role="tabpanel">
+									<h2 class="text-center pt-3">URL n CODE</h2>
+									<h3 class="text-center">100</h3>
+									<span class="challenge-desc">
+										<div class="text-center">
+											<p>Apakah kamu tau url n code itu ?</p>
+										</div><br>
+										<p>Website : klik <a href="http://rizqiwahyudi.it.student.pens.ac.id/ctf2/" target="_blank">disini</a></p>
+									</span>
+									<div class="row submit-row">
+										<div class="col-md-9 form-group">
+											<input id="flagTwo" type="text" name="answer" class="form-control" placeholder="Flag" style="height: 50px;" onkeypress="validNew(event)"><br>
+											<p class="col-md-12" id="result2">
+												
+											</p>
+										</div>
+										<div class="col-md-3 form-group key-submit">
+											<button class="btn btn-sm btn-outline-secondary float-right" type="submit" tabindex="5">Submit</button>
+										</div>
+									</div>
+								</div>
+								<div id="solves2" class="tab-pane fade" role="tabpanel">
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table table-striped text-center table-hover">
+												<thead>
+													<tr>
+														<td>
+															<b>Name</b>
+														</td>
+														<td>
+															<b>Date</b>
+														</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Cyber Security Sumenep</td>
+														<td>5 Hours ago</td>
+													</tr>
+													<tr>
+														<td>Anon Cyber Team</td>
+														<td>4 Hours ago</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://www.instagram.com/smith_smada/">
+				<small class="text-muted"><b>Powered by SMITH</b></small>
+			</a>
+		</div>
+	</footer>
+
+	<!-- JS Script -->
+	<script type="text/javascript" src="function.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script type="text/javascript" src="typed.min.js"></script>
+	<script>
+		new Typed('#lomba', {
+			strings : ['Web Hacking', 'Cryptography', 'Binary Exploitation', 'Digital Forensic', 'Network Analysis', 'Reverse Engineering'],
+			typeSpeed : 150,
+			delaySpeed : 200,
+			loop : true
+		});
+	</script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>
